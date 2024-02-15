@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+[data-theme="light"] {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+[data-theme="dark"] {
+  background-color: #333;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  /* background-color: #333; */
+  /* color: #333; */
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 2rem;
+}
+
+.content {
+  /* background-color: #fff; */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4fa3cc;
+}
