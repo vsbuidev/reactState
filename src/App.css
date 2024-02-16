@@ -6,11 +6,31 @@ body {
 [data-theme="light"] {
   background-color: #f8f8f8;
   color: #333;
+  .content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  button {
+    background-color: #d9d9d9;
+    color: #333;
+  }
+  button:hover {
+    background-color: #d1d1d1;
+  }
 }
 
 [data-theme="dark"] {
   background-color: #333;
   color: #fff;
+  .content {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  button {
+    background-color: #282828;
+    color: #fff;
+  }
+  button:hover {
+    background-color: #212121;
+  }
 }
 
 .App {
@@ -24,8 +44,6 @@ body {
 }
 
 header {
-  /* background-color: #333; */
-  /* color: #333; */
   padding: 1rem;
 }
 
@@ -36,14 +54,16 @@ main {
 }
 
 .content {
-  /* background-color: #fff; */
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  list-style: none;
 }
 
 button {
-  background-color: #61dafb;
+  background-color: #282828;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -53,5 +73,5 @@ button {
 }
 
 button:hover {
-  background-color: #4fa3cc;
+  background-color: #383838;
 }
